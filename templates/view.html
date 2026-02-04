@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html>
+<head><title>View Timetable</title></head>
+<body>
+    <h2>Timetable</h2>
+    {% for day, classes in schedule.items() %}
+        <h3>{{ day }}</h3>
+        <ul>
+        {% for time, subject, faculty, classroom in classes %}
+            <li>{{ time }} → {{ subject }} ({{ faculty }}) in {{ classroom }}</li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+    <a href="/">Back</a>
+</body>
+</html>
