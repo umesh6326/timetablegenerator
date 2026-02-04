@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html>
+<head><title>Add Class</title></head>
+<body>
+    <h2>Add Class</h2>
+    <form method="POST">
+        Day: <input type="text" name="day"><br>
+        Time: <input type="text" name="time"><br>
+        Subject: <input type="text" name="subject"><br>
+        Faculty: <input type="text" name="faculty"><br>
+        Classroom: <input type="text" name="classroom"><br>
+        <button type="submit">Add</button>
+    </form>
+    <a href="/">Back</a>
+</body>
+</html>
